@@ -1,0 +1,14 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> lowF higF stepF Z P K freq
+mag fase
+  \<< lowF higF
+    FOR w Z P K i w * ZPKEval 1.
+PICK ARG 3.14159 / 180. * fase
+SWAP AUGMENT 'fase' STO ABS LOG
+20. * mag SWAP AUGMENT 'mag' STO
+freq w AUGMENT 'freq' STO stepF
+    STEP freq OBJ\-> \->ARRY mag
+OBJ\-> \->ARRY fase OBJ\-> \->ARRY
+AUGMENT AUGMENT TRAN
+  \>> \->NUM
+\>>

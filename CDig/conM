@@ -1,0 +1,11 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> H G
+  \<< H SIZE OBJ\-> DUP DUP 'N' STO
+H 'O' STO 2. N
+    FOR I H 1. 'N-1.' \->NUM
+      FOR J G SWAP *
+      NEXT TRAN O TRAN SWAP
+AUGMENT TRAN 'O' STO
+    NEXT O 'controM' \->TAG
+  \>>
+\>>

@@ -1,0 +1,21 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> Z P K X
+  \<< Z SIZE \-> Zs
+    \<<
+      IF 'Zs>0.'
+      THEN 1. 1. Zs
+        FOR I X Z I GET - *
+        NEXT
+      ELSE 1.
+      END
+    \>> \->NUM P SIZE \-> Ps
+    \<<
+      IF 'Ps>0.'
+      THEN 1. 1. Ps
+        FOR I X P I GET - *
+        NEXT
+      ELSE 1.
+      END
+    \>> \->NUM / K *
+  \>> \->NUM
+\>>
