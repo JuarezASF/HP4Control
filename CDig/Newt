@@ -1,0 +1,12 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> F X
+  \<< 1. 100.
+    FOR I F X dFdX 'dFX' STO X F
+\->NUM 'FX' STO 'FX/dFX' \->NUM 's'
+STO
+      IF 'ABS(s)<.0005'
+      THEN 100. 'I' STO
+      END 'X-s' \->NUM 'X' STO
+    NEXT X 'root' \->TAG
+  \>>
+\>>
