@@ -1,4 +1,6 @@
 function P = fixLeftZeroPoly(p)
+%remove os zeros a esquerda de um polinômio. Isto é: [0 1 1] -> [1 1]
+
 P = [];
 firstNonZero = -1;
 for i = 1:numel(p)

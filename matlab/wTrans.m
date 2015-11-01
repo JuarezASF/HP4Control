@@ -1,4 +1,8 @@
 function [Num,Den] = wTrans(A,B,P,Q)
+%Dado função racional G(z) = A(z)/B(z) e transforção racional z = P(w)/Q(w)
+%calcula G'(w). 
+
+
     % A = [a_N .... a0] has N+1
     % B = [a_M .... b0] has M+1
     
