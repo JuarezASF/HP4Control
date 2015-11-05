@@ -1,0 +1,17 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> X XX
+  \<<
+    IF X siz1 1. ==
+    THEN X 1. GET XX *
+    ELSE
+      IF XX siz1 1. ==
+      THEN XX 1. GET X *
+      ELSE X PROOT \->COL DROP XX
+PROOT \->COL DROP X SIZE OBJ\-> DROP
+1. - XX SIZE OBJ\-> DROP 1. - +
+COL\-> PCOEF X 1. GET XX 1. GET *
+*
+      END
+    END
+  \>> \->NUM
+\>>

@@ -1,0 +1,25 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> A B P Q
+  \<< A siz1 1. - B siz1 1. - \-> N
+M
+    \<< [ 0. ] N 1. + FixSZ 1. N
+1. +
+      FOR I A I GET P N 1. + I -
+PPowe Q I 1. - PPowe conv * N 1.
++ FixSZ +
+      NEXT [ 0. ] M 1. + FixSZ
+1. M 1. +
+      FOR J B J GET P M 1. + J -
+PPowe Q J 1. - PPowe conv * M 1.
++ FixSZ +
+      NEXT
+      IF M N <
+      THEN Q N M - PPowe conv
+      END
+      IF M N >
+      THEN 2. ROLL Q M N - PPowe
+conv SWAP
+      END
+    \>> \->NUM
+  \>> \->NUM
+\>>

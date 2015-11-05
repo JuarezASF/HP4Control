@@ -1,0 +1,11 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> A N
+  \<<
+    IF A siz1 N <
+    THEN 1. N A siz1 -
+      FOR I 0.
+      NEXT A \->COL DROP N COL\->
+    ELSE A
+    END
+  \>>
+\>>

@@ -1,0 +1,5 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> X
+  \<< X SIZE OBJ\-> DROP
+  \>> \->NUM
+\>>

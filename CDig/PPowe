@@ -1,0 +1,11 @@
+%%HP: T(3)A(D)F(.);
+\<< \-> A N
+  \<<
+    IF N 0. ==
+    THEN [ 1. ]
+    ELSE [ 1. ] 1. N
+      FOR I A conv
+      NEXT
+    END
+  \>> \->NUM
+\>>
